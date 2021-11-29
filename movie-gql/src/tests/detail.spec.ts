@@ -21,7 +21,6 @@ describe(`Integration`, () => {
             data {
               adult
               backdrop_path
-              belongs_to_collection
               budget
               genres {
                 id

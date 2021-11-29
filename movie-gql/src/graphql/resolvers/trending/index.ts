@@ -35,8 +35,6 @@ const list = async (arg: any) => {
 
   const data = await response.json();
 
-  console.log("here data = ", data);
-
   return {
     error: false,
     message: "",

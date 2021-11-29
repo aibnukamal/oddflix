@@ -34,7 +34,6 @@ const typeDefs = gql`
   type ResultDetail {
     adult: Boolean
     backdrop_path: String
-    belongs_to_collection: String
     budget: Int
     genres: [DetailGenres]
     homepage: String

@@ -4,7 +4,7 @@ import { generateApiUrl } from "./../../../helpers";
 
 const DEFAULT_PARAMS = {
   language: "en-US",
-  append_to_response: "videos",
+  page: "1",
 };
 
 const list = async (arg: any) => {
@@ -23,8 +23,7 @@ const list = async (arg: any) => {
     };
   }
 
-  const API_PATH = `/movie/${MOVIE_ID}`;
-  const URL = generateApiUrl(API_PATH, params);
+  const URL = generateApiUrl(`/movie/${MOVIE_ID}/similar`, params);
 
   const response = await fetch(URL, {
     method: "GET",
@@ -52,7 +51,7 @@ const list = async (arg: any) => {
 
 const resolvers = {
   Query: {
-    detail: async (_: unknown, obj: any) => {
+    similar: async (_: unknown, obj: any) => {
       const { input } = obj;
       const data = await list(input);
 
