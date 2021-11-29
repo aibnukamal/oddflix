@@ -25,12 +25,22 @@ const port = process.env.PORT || 5000;
 
 const start = async (): Promise<void> => {
   try {
-    await app.listen(port);
+    await app.listen(port, "0.0.0.0");
     console.log(`Listening on port ${port}`);
   } catch (err) {
     app.log.error(err);
     process.exit(1);
   }
 };
+
+// catch error
+process.on("uncaughtException", (error) => {
+  console.error(error);
+});
+
+// catch error
+process.on("unhandledRejection", (error) => {
+  console.error(error);
+});
 
 start();

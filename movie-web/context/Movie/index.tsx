@@ -7,7 +7,7 @@ export enum SET_FAVORITES {
 }
 
 const setFavorites = (type: SET_FAVORITES, value: Record<string, any>) => {};
-const isFavorite = (value: Record<string, any>) => Boolean;
+const isFavorite = (value: Record<string, boolean>) => false;
 
 export const MovieContext = React.createContext({
   genres: [],
