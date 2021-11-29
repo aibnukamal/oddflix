@@ -1,6 +1,8 @@
 import Head from "next/head";
 
 import { useMovie } from "./../context/Movie";
+import Banner from "./../components/Banner";
+import MovieCategory from "./../components/MovieCategory";
 
 interface Genres {
   id: number;
@@ -15,6 +17,12 @@ const Home = () => {
       <Head>
         <title>OddFlix | Discover Movie</title>
       </Head>
+
+      <Banner />
+
+      {genres.map(({ id, name }: Genres) => (
+        <MovieCategory key={id} genreId={id} genreTitle={name} />
+      ))}
     </>
   );
 };

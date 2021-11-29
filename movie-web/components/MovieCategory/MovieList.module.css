@@ -1,0 +1,12 @@
+.listWrapper {
+  width: 100%;
+  overflow-x: scroll;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.poster {
+  width: 150px;
+  height: 250px;
+  border-radius: 8px;
+}
