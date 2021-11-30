@@ -12,7 +12,7 @@ const DEFAULT_PARAMS = {
   with_watch_monetization_types: "flatrate",
 };
 
-const useGetDiscoverMovie = (input: Record<string, string>) => {
+const useGetDiscoverMovie = (input: Record<string, any>) => {
   const [variables, setVariables] = useState(DEFAULT_PARAMS);
 
   const { loading, data, error, refetch } = useQuery(getDiscoverMovie, {

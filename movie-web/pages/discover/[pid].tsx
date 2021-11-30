@@ -110,9 +110,7 @@ const Discover = () => {
               </Tooltip>
             </Space>
             <Text style={{ width: "400px", marginBottom: "10px" }}>
-              {
-                "Following her father's murder, a revenge-driven woman puts her trust in a powerful crime boss — and enters the police force under his direction."
-              }
+              {data?.overview}
             </Text>
 
             <ul style={{ listStyle: "none", padding: 0 }}>

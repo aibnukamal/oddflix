@@ -23,7 +23,7 @@ const Search = () => {
   return (
     <>
       <Head>
-        <title>OddFlix | My Favofites Movie</title>
+        <title>OddFlix | Serach Movie</title>
       </Head>
 
       <div style={{ display: "flex", width: "100%", margin: "30px 50px" }}>
