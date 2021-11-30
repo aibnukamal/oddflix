@@ -17,8 +17,9 @@ const BACKGROUND_MASK =
 
 const MovieCategory = ({ genreId, genreTitle }: MovieCategory) => {
   const { Title } = Typography;
-  const with_genres = Boolean(genreId) ? { with_genres: genreId } : {};
-  const { loading, data } = useGetDiscoverMovie(with_genres);
+  const { loading, data } = useGetDiscoverMovie({
+    with_genres: genreId.toString(),
+  });
 
   if (loading) return null;
 
