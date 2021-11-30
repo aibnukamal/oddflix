@@ -10,13 +10,11 @@ import {
   GlobalOutlined,
 } from "@ant-design/icons";
 
-import { useMovie } from "./../../context/Movie";
 import useGetDetailMovie from "./../../hooks/useGetDetailMovie";
 import { IMAGE_HOST } from "./../../constants";
 import style from "./../../styles/Discover.module.css";
 import ButtonFavorite from "./../../components/ButtonFavorite";
 import { generateTime } from "./../../helpers";
-import { getGenre } from "../../helpers";
 
 import MovieSimilar from "./../../components/MovieSimilar";
 
@@ -28,7 +26,6 @@ const Discover = () => {
   const { pid } = router.query;
   const { Title, Text } = Typography;
   const id = Number(pid);
-  const { genres } = useMovie();
 
   const { loading, data } = useGetDetailMovie({ id });
   const date = data?.release_date?.split("-") || "";
