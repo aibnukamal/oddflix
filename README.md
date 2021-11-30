@@ -1,5 +1,5 @@
 # OddFlix
-Oddflix is movie website example connect with [themoviedb](https://www.themoviedb.org/) API, This repo contains **API** and **WEB APP** aplication.
+OddFlix is movie website example connect with [themoviedb](https://www.themoviedb.org/) API, This repo contains **API** and **WEB APP** aplication.
 
 ## Tech Stack
 **Client:** [NextJS](https://nextjs.org/), [Ant Design](https://ant.design/)

@@ -3,7 +3,7 @@ import { Typography, Space, Button } from "antd";
 
 import { useMovie } from "./../../context/Movie";
 import { IMAGE_HOST } from "../../constants";
-import style from "./MovieList.module.css";
+import style from "./Favorites.module.css";
 
 import ButtonFavorites from "./../ButtonFavorite";
 

@@ -1,7 +1,12 @@
 import { useState, useMemo, CSSProperties, ReactNode } from "react";
 import Link from "next/link";
 import { Layout, Button, Tooltip } from "antd";
-import { HomeFilled, HeartFilled, YoutubeFilled } from "@ant-design/icons";
+import {
+  HomeFilled,
+  HeartFilled,
+  YoutubeFilled,
+  SearchOutlined,
+} from "@ant-design/icons";
 
 import style from "./Sider.module.css";
 
@@ -16,6 +21,11 @@ const menu: MenuInterface[] = [
     icon: <HomeFilled />,
     title: "Discover",
     link: "/",
+  },
+  {
+    icon: <SearchOutlined />,
+    title: "Search Movie",
+    link: "/search",
   },
   {
     icon: <HeartFilled />,

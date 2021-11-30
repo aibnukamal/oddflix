@@ -9,6 +9,8 @@ const typeDefs = gql`
     include_video: String
     with_watch_monetization_types: String
     with_genres: Int
+    release_date_gte: String
+    release_date_lte: String
   }
 
   type Query {

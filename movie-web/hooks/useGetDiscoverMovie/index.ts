@@ -8,13 +8,11 @@ import getDiscoverMovie from "./getDiscoverMovie";
 const DEFAULT_PARAMS = {
   language: "en-US",
   sort_by: "popularity.desc",
-  include_adult: "false",
-  include_video: "false",
   page: "1",
   with_watch_monetization_types: "flatrate",
 };
 
-const useGetDiscoverMovie = (input: object) => {
+const useGetDiscoverMovie = (input: Record<string, string>) => {
   const [variables, setVariables] = useState(DEFAULT_PARAMS);
 
   const { loading, data, error, refetch } = useQuery(getDiscoverMovie, {
@@ -23,6 +21,8 @@ const useGetDiscoverMovie = (input: object) => {
       input: {
         ...DEFAULT_PARAMS,
         ...input,
+        release_date_gte: input?.release_date_gte || "",
+        release_date_lte: input?.release_date_lte || "",
       },
     },
     onError: (err) => {

@@ -1,24 +1,34 @@
+import { useEffect } from "react";
 import { Typography, Space } from "antd";
 import Link from "next/link";
 
 import useGetDiscoverMovie from "./../../hooks/useGetDiscoverMovie";
 import { IMAGE_HOST } from "../../constants";
-import style from "./MovieList.module.css";
+import style from "./SearchMovie.module.css";
 
 import ButtonFavorite from "./../ButtonFavorite";
 
-interface MovieCategory {
+interface SearchMovie {
   genreId: number;
   genreTitle: string;
+  sort: string;
+  date: string[];
 }
 
 const BACKGROUND_MASK =
   "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5))";
 
-const MovieCategory = ({ genreId, genreTitle }: MovieCategory) => {
+const SearchMovie = ({ genreTitle, sort, date }: SearchMovie) => {
   const { Title } = Typography;
-  const with_genres = Boolean(genreId) ? { with_genres: genreId } : {};
-  const { loading, data } = useGetDiscoverMovie(with_genres);
+  const { loading, data, doRefetch } = useGetDiscoverMovie({});
+
+  useEffect(() => {
+    doRefetch({
+      sort_by: sort || "popularity.desc",
+      release_date_gte: date[0],
+      release_date_lte: date[1],
+    });
+  }, [sort, date]);
 
   if (loading) return null;
 
@@ -30,8 +40,9 @@ const MovieCategory = ({ genreId, genreTitle }: MovieCategory) => {
       <div className={style.listWrapper}>
         <Space
           direction="horizontal"
-          size="middle"
           style={{ margin: "0px 50px 0px" }}
+          size={[8, 16]}
+          wrap
         >
           {data.map((value) => {
             const { id, poster_path } = value;
@@ -61,4 +72,4 @@ const MovieCategory = ({ genreId, genreTitle }: MovieCategory) => {
   );
 };
 
-export default MovieCategory;
+export default SearchMovie;
