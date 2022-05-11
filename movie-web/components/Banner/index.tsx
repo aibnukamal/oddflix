@@ -1,4 +1,5 @@
 import Link from "next/link";
+import React from "react";
 import { Carousel, Button, Typography, Space, Tooltip } from "antd";
 import { StarFilled, LikeFilled, PlaySquareFilled } from "@ant-design/icons";
 
@@ -21,76 +22,78 @@ const Banner = () => {
   if (loading) return null;
 
   return (
-    <Carousel autoplay speed={1000} effect="fade">
-      {data.map((value) => {
-        const {
-          id,
-          title,
-          original_title,
-          genre_ids,
-          popularity,
-          vote_average,
-          poster_path,
-          overview,
-          backdrop_path,
-        } = value;
-        return (
-          <div key={id}>
-            <div
-              className={style.itemWrapper}
-              style={{
-                background: `${BACKGROUND_MASK}, url(${IMAGE_HOST}/original${
-                  backdrop_path || poster_path
-                })`,
-                backgroundSize: "cover",
-                backgroundPosition: "top",
-              }}
-            >
-              <div className={style.textWrapper}>
-                <Title level={2} style={{ marginBottom: "30px" }}>
-                  {original_title || title}
-                </Title>
-                <Space
-                  direction="horizontal"
-                  size="middle"
-                  style={{ marginBottom: "30px" }}
-                >
-                  <Link href={`/discover/${id}`}>
-                    <Button ghost icon={<PlaySquareFilled />} size="large">
-                      Watch
-                    </Button>
-                  </Link>
-                  <ButtonFavorite simple={false} value={value} />
-                </Space>
-                <Space direction="horizontal" size="middle">
-                  <Title style={{ margin: 0 }} level={5}>
-                    {getGenre(genre_ids, genres)}
+    <div data-testid="banner_container">
+      <Carousel autoplay speed={1000} effect="fade">
+        {data.map((value) => {
+          const {
+            id,
+            title,
+            original_title,
+            genre_ids,
+            popularity,
+            vote_average,
+            poster_path,
+            overview,
+            backdrop_path,
+          } = value;
+          return (
+            <div key={id}>
+              <div
+                className={style.itemWrapper}
+                style={{
+                  background: `${BACKGROUND_MASK}, url(${IMAGE_HOST}/original${
+                    backdrop_path || poster_path
+                  })`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "top",
+                }}
+              >
+                <div className={style.textWrapper}>
+                  <Title level={2} style={{ marginBottom: "30px" }}>
+                    {original_title || title}
                   </Title>
-                  |
-                  <Tooltip placement="top" title="Popularity" color="blue">
-                    <Space direction="horizontal" size="middle">
-                      <StarFilled />
-                      <Title style={{ margin: 0 }} level={5}>
-                        {popularity}
-                      </Title>
-                    </Space>
-                  </Tooltip>
-                  |
-                  <Tooltip placement="top" title="Vote" color="blue">
-                    <Space direction="horizontal" size="middle">
-                      <Button ghost size="small">
-                        {vote_average}
+                  <Space
+                    direction="horizontal"
+                    size="middle"
+                    style={{ marginBottom: "30px" }}
+                  >
+                    <Link href={`/discover/${id}`}>
+                      <Button ghost icon={<PlaySquareFilled />} size="large">
+                        Watch
                       </Button>
-                    </Space>
-                  </Tooltip>
-                </Space>
-                <Text style={{ width: "400px" }}>{overview}</Text>
+                    </Link>
+                    <ButtonFavorite simple={false} value={value} />
+                  </Space>
+                  <Space direction="horizontal" size="middle">
+                    <Title style={{ margin: 0 }} level={5}>
+                      {getGenre(genre_ids, genres)}
+                    </Title>
+                    |
+                    <Tooltip placement="top" title="Popularity" color="blue">
+                      <Space direction="horizontal" size="middle">
+                        <StarFilled />
+                        <Title style={{ margin: 0 }} level={5}>
+                          {popularity}
+                        </Title>
+                      </Space>
+                    </Tooltip>
+                    |
+                    <Tooltip placement="top" title="Vote" color="blue">
+                      <Space direction="horizontal" size="middle">
+                        <Button ghost size="small">
+                          {vote_average}
+                        </Button>
+                      </Space>
+                    </Tooltip>
+                  </Space>
+                  <Text style={{ width: "400px" }}>{overview}</Text>
+                </div>
               </div>
             </div>
-          </div>
-        );
-      })}
-    </Carousel>
+          );
+        })}
+      </Carousel>
+    </div>
   );
 };
 

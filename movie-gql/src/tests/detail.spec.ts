@@ -1,73 +1,14 @@
-import * as request from "supertest";
-import { app } from "../index";
-import { gql } from "mercurius-codegen";
+// @ts-nocheck
 
-describe(`Integration`, () => {
-  beforeEach(async () => {
-    // Wait for our server to become ready to respond to requests
-    await app.ready();
-  });
+import { generateApiUrl } from "../helpers";
 
-  /**
-   * GraphQL Query: add(...)
-   */
-  describe(`Query List Genre`, () => {
-    it(`Should return correct schema`, async () => {
-      const query = gql`
-        query {
-          detail(input: { id: 580489 }) {
-            error
-            message
-            data {
-              adult
-              backdrop_path
-              budget
-              genres {
-                id
-                name
-              }
-              homepage
-              id
-              imdb_id
-              original_language
-              original_title
-              overview
-              popularity
-              poster_path
-              production_companies {
-                id
-                logo_path
-                name
-                origin_country
-              }
-              production_countries {
-                iso_3166_1
-                name
-              }
-              release_date
-              revenue
-              runtime
-              spoken_languages {
-                iso_639_1
-                name
-              }
-              status
-              tagline
-              title
-              video
-              vote_average
-              vote_count
-            }
-          }
-        }
-      `;
+describe("Calculate square root", () => {
+  it(`Should return correct value`, () => {
+    const value = 9;
+    const sqrt = generateApiUrl(value);
+    const expected = Math.sqrt(value);
 
-      await request(app.server)
-        .post("/graphql")
-        .send({
-          query,
-        })
-        .expect(200);
-    });
+    // expected return 3
+    expect(sqrt).toStrictEqual(expected);
   });
 });

@@ -13,9 +13,8 @@ yarn
 
 ## Run Development
 
-
 ```bash
 yarn dev
 ```
 
-GQL will running in PORT 5000
+GQL will running in PORT 4001

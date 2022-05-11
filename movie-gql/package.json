@@ -14,7 +14,7 @@
     "lint:write": "eslint \"src/**/*.ts\" --fix"
   },
   "devDependencies": {
-    "@types/jest": "^27.0.3",
+    "@types/jest": "^27.5.0",
     "@types/node-fetch": "^2.5.12",
     "@types/supertest": "^2.0.11",
     "@types/ws": "^8.2.0",

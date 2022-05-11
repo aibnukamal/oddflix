@@ -4,6 +4,7 @@ import { notification } from "antd";
 import { useQuery } from "@apollo/client";
 
 import getTrendingMovie from "./getTrendingMovie";
+import mock from "../../components/Banner/__data_mocks__/getTrendingMovie";
 
 const DEFAULT_PARAMS = {
   media_type: "all",
@@ -42,10 +43,10 @@ const useGetTrendingMovie = (input: object) => {
     });
   };
 
-  const resp = data?.trending?.data?.results || [];
+  const resp = mock?.data?.trending?.data?.results || [];
 
   return {
-    loading,
+    loading: false,
     data: resp,
     error,
     doRefetch,

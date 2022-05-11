@@ -21,7 +21,7 @@ app.register(mercurius, {
   graphiql: true,
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4001;
 
 const start = async (): Promise<void> => {
   try {
