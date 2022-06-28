@@ -32,16 +32,18 @@ describe("Banner Component", () => {
   });
 
   it("should render loading", async () => {
-    const { findByTestId } = render(
+    const { container } = render(
       <BannerView loading={true} data={[]} genres={[]} />
     );
 
-    const bannerContainer = await findByTestId("banner_loading");
+    // const bannerContainer = await findByTestId("banner_loading");
 
-    expect(bannerContainer).toBeInTheDocument();
+    console.log("here container = ", container);
+
+    expect(true).toBe(false);
   });
 
-  it("should poster path if backdrop not exist", async () => {
+  it("should use poster path if backdrop not exist", async () => {
     const { findByTestId } = render(
       <BannerItemView
         id={1}
@@ -58,7 +60,7 @@ describe("Banner Component", () => {
       />
     );
 
-    const bannerContainer = await findByTestId("banner_loading");
+    const bannerContainer = await findByTestId("banner_item");
 
     expect(bannerContainer).toBeInTheDocument();
   });

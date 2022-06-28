@@ -29,6 +29,7 @@ const Banner = ({
 
   return (
     <div
+      data-testid="banner_item"
       className={style.itemWrapper}
       style={{
         background: `${BACKGROUND_MASK}, url(${IMAGE_HOST}/original${
