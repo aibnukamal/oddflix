@@ -33,7 +33,7 @@ jobs:
        yarn test --coverage
        
     - name: Copy Coverage To Predictable Location
-      run: cp coverage/**/coverage.test.xml coverage.test.xml
+      run: cp coverage/**/clover.xml coverage.test.xml
       
     - name: Code Coverage Summary Report
       uses: irongut/CodeCoverageSummary@v1.2.0
