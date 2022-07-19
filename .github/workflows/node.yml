@@ -35,5 +35,5 @@ jobs:
     - name: Check test coverage
       uses: terencetcf/github-actions-lcov-minimum-coverage-checker@v1
       with:
-        coverage-file: movie-gql/coverage/**/lcov.info
+        coverage-file: movie-gql/coverage/lcov.info
         minimum-coverage: 99
