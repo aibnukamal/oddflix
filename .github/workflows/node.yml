@@ -32,5 +32,7 @@ jobs:
        yarn
        yarn test --coverage
        
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v2
+    - name: Code coverage
+      uses: MishaKav/jest-coverage-comment@main
+      with:
+        coverage-summary-path: ./coverage/coverage-final.json
