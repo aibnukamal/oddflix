@@ -32,19 +32,5 @@ jobs:
        yarn
        yarn test --coverage
        
-#     - name: Copy Coverage To Predictable Location
-#       run: cp coverage/**/clover.xml coverage.test.xml
-      
-    - name: Code Coverage Summary Report
-      uses: irongut/CodeCoverageSummary@v1.2.0
-      with:
-        filename: coverage/**/clover.xml
-#         filename: coverage.test.xml
-        badge: true
-        fail_below_min: true
-        format: markdown
-        hide_branch_rate: false
-        hide_complexity: true
-        indicators: true
-        output: both
-        thresholds: '60 80'
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v2
