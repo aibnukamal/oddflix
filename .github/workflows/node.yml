@@ -14,8 +14,8 @@ jobs:
     strategy:
       max-parallel: 24
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-        node-version: [12.x, 14.x, 16.x]
+        os: [ubuntu-latest]
+        node-version: [16.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -24,7 +24,24 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         
+    - name: Run test
     - run: |
        cd movie-gql
        yarn
-       yarn test
+       yarn test --coverage
+       
+    - name: Copy Coverage To Predictable Location
+      run: cp coverage/**/coverage.cobertura.xml coverage.cobertura.xml
+      
+    - name: Code Coverage Summary Report
+      uses: irongut/CodeCoverageSummary@v1.2.0
+      with:
+        filename: coverage.cobertura.xml
+        badge: true
+        fail_below_min: true
+        format: markdown
+        hide_branch_rate: false
+        hide_complexity: true
+        indicators: true
+        output: both
+        thresholds: '60 80'
