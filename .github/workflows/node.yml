@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: run unit test
+    name: Run Unit Test
     runs-on: ${{matrix.os}}
 
     strategy:
@@ -35,7 +35,7 @@ jobs:
     - name: Coverage Diff
       uses: greatwizard/coverage-diff-action@v1
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+        github-token: ${{ github.token }}
 
     - name: Check test coverage
       uses: terencetcf/github-actions-lcov-minimum-coverage-checker@v1
