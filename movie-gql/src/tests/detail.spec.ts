@@ -11,7 +11,7 @@ describe(`Integration`, () => {
   /**
    * GraphQL Query: add(...)
    */
-  describe(`Query List Genre`, () => {
+  describe(`Query List Genres`, () => {
     it(`Should return correct schema`, async () => {
       const query = gql`
         query {

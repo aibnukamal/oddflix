@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-
+    name: Run Unit Test
     runs-on: ${{matrix.os}}
 
     strategy:
@@ -31,6 +31,12 @@ jobs:
        cd movie-gql
        yarn
        yarn test --coverage
-       
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v2
+
+    - name: Coverage Diff
+      uses: greatwizard/coverage-diff-action@v1
+
+    - name: Check test coverage
+      uses: terencetcf/github-actions-lcov-minimum-coverage-checker@v1
+      with:
+        coverage-file: movie-gql/coverage/lcov.info
+        minimum-coverage: 99
