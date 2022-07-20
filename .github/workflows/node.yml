@@ -34,8 +34,6 @@ jobs:
 
     - name: Coverage Diff
       uses: greatwizard/coverage-diff-action@v1
-      with:
-        github-token: ${{ github.token }}
 
     - name: Check test coverage
       uses: terencetcf/github-actions-lcov-minimum-coverage-checker@v1
