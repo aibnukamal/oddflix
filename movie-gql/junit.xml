@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="5" failures="0" errors="0" time="10.345">
+  <testsuite name="Integration" errors="0" failures="0" skipped="0" timestamp="2022-08-01T04:44:48" time="6.167" tests="1">
+    <testcase classname="Integration Query List Genres Should return correct schema" name="Integration Query List Genres Should return correct schema" time="0.838">
+    </testcase>
+  </testsuite>
+  <testsuite name="Integration" errors="0" failures="0" skipped="0" timestamp="2022-08-01T04:44:55" time="0.977" tests="1">
+    <testcase classname="Integration Query List Genre Should return correct schema" name="Integration Query List Genre Should return correct schema" time="0.413">
+    </testcase>
+  </testsuite>
+  <testsuite name="Integration" errors="0" failures="0" skipped="0" timestamp="2022-08-01T04:44:56" time="0.916" tests="1">
+    <testcase classname="Integration Query List Trending Should return correct schema" name="Integration Query List Trending Should return correct schema" time="0.433">
+    </testcase>
+  </testsuite>
+  <testsuite name="Integration" errors="0" failures="0" skipped="0" timestamp="2022-08-01T04:44:57" time="1.01" tests="1">
+    <testcase classname="Integration Query List Discover Should return correct schema" name="Integration Query List Discover Should return correct schema" time="0.443">
+    </testcase>
+  </testsuite>
+  <testsuite name="Integration" errors="0" failures="0" skipped="0" timestamp="2022-08-01T04:44:58" time="0.966" tests="1">
+    <testcase classname="Integration Query List Genre Should return correct schema" name="Integration Query List Genre Should return correct schema" time="0.446">
+    </testcase>
+  </testsuite>
+</testsuites>
