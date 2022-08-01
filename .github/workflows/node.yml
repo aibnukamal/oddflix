@@ -39,4 +39,4 @@ jobs:
       uses: terencetcf/github-actions-lcov-minimum-coverage-checker@v1
       with:
         coverage-file: movie-gql/coverage/lcov.info
-        minimum-coverage: 99
+        minimum-coverage: 50
