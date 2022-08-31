@@ -33,11 +33,11 @@ jobs:
        yarn test --coverage
     
     - name: Publish Test Results
-      uses: EnricoMi/publish-unit-test-result-action@v1
+      uses: EnricoMi/publish-unit-test-result-action@v2
       if: always()
       with:
-        files: "movie-gql/junit.xml"
-
+        junit_files: "movie-gql/junit.xml"
+          
     - name: Check test coverage
       uses: terencetcf/github-actions-lcov-minimum-coverage-checker@v1
       with:
