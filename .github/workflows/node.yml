@@ -36,7 +36,9 @@ jobs:
       uses: EnricoMi/publish-unit-test-result-action@v2
       if: always()
       with:
-        junit_files: "movie-gql/junit.xml"
+        junit_files: | 
+          "movie-gql/junit.xml"
+          "movie-gql/junit.xml"      
           
     - name: Check test coverage
       uses: terencetcf/github-actions-lcov-minimum-coverage-checker@v1
