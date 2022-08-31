@@ -1,0 +1,766 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="128.3900" tests="299" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-08-31T12:03:26" tests="0" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="ContactController" timestamp="2022-08-31T12:03:58" tests="2" file="/Users/kamal/web/similie/one/test/integration/controllers/ContactController.test.js" time="1.6310" failures="0">
+    <testcase name="ContactController should create an associated collection" time="0.6850" classname="should create an associated collection">
+    </testcase>
+    <testcase name="ContactController should find associated collection" time="0.2400" classname="should find associated collection">
+    </testcase>
+  </testsuite>
+  <testsuite name="ContractorController" timestamp="2022-08-31T12:03:59" tests="1" file="/Users/kamal/web/similie/one/test/integration/controllers/ContractorController.test.js" time="0.7340" failures="0">
+    <testcase name="ContractorController should create an associated model" time="0.2860" classname="should create an associated model">
+    </testcase>
+  </testsuite>
+  <testsuite name="CostCodeController" timestamp="2022-08-31T12:04:00" tests="0" file="/Users/kamal/web/similie/one/test/integration/controllers/CostCodeController.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#CostCodeController" timestamp="2022-08-31T12:04:01" tests="1" file="/Users/kamal/web/similie/one/test/integration/controllers/CostCodeController.test.js" time="0.2460" failures="0">
+    <testcase name="CostCodeController #CostCodeController should return that we are ok and authenticated" time="0.2240" classname="should return that we are ok and authenticated">
+    </testcase>
+  </testsuite>
+  <testsuite name="#CostCodeController.connect" timestamp="2022-08-31T12:04:01" tests="7" file="/Users/kamal/web/similie/one/test/integration/controllers/CostCodeController.test.js" time="2.4470" failures="0">
+    <testcase name="CostCodeController #CostCodeController.connect should not return any stations" time="0.1900" classname="should not return any stations">
+    </testcase>
+    <testcase name="CostCodeController #CostCodeController.connect should return 1 station with a common tag" time="0.6480" classname="should return 1 station with a common tag">
+    </testcase>
+    <testcase name="CostCodeController #CostCodeController.connect should return 0 station becuse we removed a common tag" time="0.2390" classname="should return 0 station becuse we removed a common tag">
+    </testcase>
+    <testcase name="CostCodeController #CostCodeController.connect should return 1 station becuse station 3 does not have a common node" time="0.4790" classname="should return 1 station becuse station 3 does not have a common node">
+    </testcase>
+    <testcase name="CostCodeController #CostCodeController.connect should return 2 station becuse we added a common node to station 3" time="0.3800" classname="should return 2 station becuse we added a common node to station 3">
+    </testcase>
+    <testcase name="CostCodeController #CostCodeController.connect should return 2 station becuse Boop is in the search field for these station" time="0.2580" classname="should return 2 station becuse Boop is in the search field for these station">
+    </testcase>
+    <testcase name="CostCodeController #CostCodeController.connect should return 0 station becuse 8234283842 is NOT in the search field for these station" time="0.2450" classname="should return 0 station becuse 8234283842 is NOT in the search field for these station">
+    </testcase>
+  </testsuite>
+  <testsuite name="DomainController" timestamp="2022-08-31T12:04:03" tests="2" file="/Users/kamal/web/similie/one/test/integration/controllers/DomainController.test.js" time="0.0000" failures="0">
+    <testcase name="DomainController should show Authorized for testAdmin" time="0.3510" classname="should show Authorized for testAdmin">
+    </testcase>
+    <testcase name="DomainController should show Authorized for KaptainCool" time="0.2680" classname="should show Authorized for KaptainCool">
+    </testcase>
+  </testsuite>
+  <testsuite name="#DomainPolicy" timestamp="2022-08-31T12:04:05" tests="9" file="/Users/kamal/web/similie/one/test/integration/controllers/DomainController.test.js" time="1.2930" failures="0">
+    <testcase name="DomainController #DomainPolicy should show 200 from the controller" time="0.1260" classname="should show 200 from the controller">
+    </testcase>
+    <testcase name="DomainController #DomainPolicy should show 200 when testing with the site controller" time="0.1140" classname="should show 200 when testing with the site controller">
+    </testcase>
+    <testcase name="DomainController #DomainPolicy should return a NULL domain param with the 200 response for the site model" time="0.0840" classname="should return a NULL domain param with the 200 response for the site model">
+    </testcase>
+    <testcase name="DomainController #DomainPolicy should GET domain id for similie.local.com domain with the 200 response for the site model" time="0.2370" classname="should GET domain id for similie.local.com domain with the 200 response for the site model">
+    </testcase>
+    <testcase name="DomainController #DomainPolicy should POST domain id for similie.local.com domain with the 200 response for the site model" time="0.0870" classname="should POST domain id for similie.local.com domain with the 200 response for the site model">
+    </testcase>
+    <testcase name="DomainController #DomainPolicy should DELETE domain id for similie.local.com domain with the 200 response for the site model" time="0.0710" classname="should DELETE domain id for similie.local.com domain with the 200 response for the site model">
+    </testcase>
+    <testcase name="DomainController #DomainPolicy should PUT domain id for similie.local.com domain with the 200 response for the site model" time="0.0800" classname="should PUT domain id for similie.local.com domain with the 200 response for the site model">
+    </testcase>
+    <testcase name="DomainController #DomainPolicy should GET domain id for similie.local domain with the 200 response for the site model" time="0.2320" classname="should GET domain id for similie.local domain with the 200 response for the site model">
+    </testcase>
+    <testcase name="DomainController #DomainPolicy should be forebidden 403 for similie.local domain for the site model" time="0.2560" classname="should be forebidden 403 for similie.local domain for the site model">
+    </testcase>
+  </testsuite>
+  <testsuite name="#DomainSelectRoute" timestamp="2022-08-31T12:04:06" tests="8" file="/Users/kamal/web/similie/one/test/integration/controllers/DomainController.test.js" time="0.7070" failures="0">
+    <testcase name="DomainController #DomainSelectRoute should show 400 from domain select" time="0.1070" classname="should show 400 from domain select">
+    </testcase>
+    <testcase name="DomainController #DomainSelectRoute should show 200 from domain select" time="0.2280" classname="should show 200 from domain select">
+    </testcase>
+    <testcase name="DomainController #DomainSelectRoute should have empty domains array property" time="0.0000" classname="should have empty domains array property">
+    </testcase>
+    <testcase name="DomainController #DomainSelectRoute should have NOT have last domains property" time="0.0000" classname="should have NOT have last domains property">
+    </testcase>
+    <testcase name="DomainController #DomainSelectRoute should show 200 from domain select" time="0.2480" classname="should show 200 from domain select">
+    </testcase>
+    <testcase name="DomainController #DomainSelectRoute should should return a keepers domain id param with the 200 response for the site model" time="0.1180" classname="should should return a keepers domain id param with the 200 response for the site model">
+    </testcase>
+    <testcase name="DomainController #DomainSelectRoute should have empty domains array property since we are an admin" time="0.0000" classname="should have empty domains array property since we are an admin">
+    </testcase>
+    <testcase name="DomainController #DomainSelectRoute should have have object last domain since we are in the similie.local.com domain " time="0.0000" classname="should have have object last domain since we are in the similie.local.com domain ">
+    </testcase>
+  </testsuite>
+  <testsuite name="IndexController" timestamp="2022-08-31T12:04:07" tests="1" file="/Users/kamal/web/similie/one/test/integration/controllers/IndexController.test.js" time="0.0300" failures="0">
+    <testcase name="IndexController should show unauthorized" time="0.0290" classname="should show unauthorized">
+    </testcase>
+  </testsuite>
+  <testsuite name="NodeController" timestamp="2022-08-31T12:04:07" tests="0" file="/Users/kamal/web/similie/one/test/integration/controllers/NodeController.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="NodeCreation" timestamp="2022-08-31T12:04:07" tests="1" file="/Users/kamal/web/similie/one/test/integration/controllers/NodeController.test.js" time="3.8560" failures="0">
+    <testcase name="NodeController NodeCreation should be create every value via updateOrCreate" time="3.6890" classname="should be create every value via updateOrCreate">
+    </testcase>
+  </testsuite>
+  <testsuite name="NodeMinsAndMax" timestamp="2022-08-31T12:04:11" tests="3" file="/Users/kamal/web/similie/one/test/integration/controllers/NodeController.test.js" time="0.5370" failures="0">
+    <testcase name="NodeController NodeMinsAndMax should be cool with no vialated values" time="0.1160" classname="should be cool with no vialated values">
+    </testcase>
+    <testcase name="NodeController NodeMinsAndMax should get beached with MAX violated values" time="0.1530" classname="should get beached with MAX violated values">
+    </testcase>
+    <testcase name="NodeController NodeMinsAndMax should get beached with MIN violated values" time="0.1570" classname="should get beached with MIN violated values">
+    </testcase>
+  </testsuite>
+  <testsuite name="ParentalEarlyWarning" timestamp="2022-08-31T12:04:12" tests="12" file="/Users/kamal/web/similie/one/test/integration/controllers/NodeController.test.js" time="28.6250" failures="0">
+    <testcase name="NodeController ParentalEarlyWarning should average 20 values" time="5.7170" classname="should average 20 values">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should average blocks of 5 minute time values seperated by an over condition" time="6.1020" classname="should average blocks of 5 minute time values seperated by an over condition">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should average blocks of time seperated durring a current hour" time="5.3730" classname="should average blocks of time seperated durring a current hour">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should find four children of parent station" time="0.0580" classname="should find four children of parent station">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should find a station ancestry of two stations" time="0.2160" classname="should find a station ancestry of two stations">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should create a new node with and passback an id" time="0.9120" classname="should create a new node with and passback an id">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should create a new node with and passback an id" time="0.4720" classname="should create a new node with and passback an id">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should create a child early warning cluster" time="0.0710" classname="should create a child early warning cluster">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should create a child early warning" time="0.0770" classname="should create a child early warning">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should create a child early warning" time="0.2550" classname="should create a child early warning">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should return an array with one early warning" time="1.6240" classname="should return an array with one early warning">
+    </testcase>
+    <testcase name="NodeController ParentalEarlyWarning should return an array with one early warning after 5 attempts" time="6.9870" classname="should return an array with one early warning after 5 attempts">
+    </testcase>
+  </testsuite>
+  <testsuite name="StockTakeController" timestamp="2022-08-31T12:04:41" tests="7" file="/Users/kamal/web/similie/one/test/integration/controllers/StockTakeController.test.js" time="6.7090" failures="0">
+    <testcase name="StockTakeController should return that we are ok and authenticated" time="0.3590" classname="should return that we are ok and authenticated">
+    </testcase>
+    <testcase name="StockTakeController should generate some random nodes for the inventory type" time="1.0850" classname="should generate some random nodes for the inventory type">
+    </testcase>
+    <testcase name="StockTakeController Should create our first stocktake" time="0.4730" classname="Should create our first stocktake">
+    </testcase>
+    <testcase name="StockTakeController should schedule an active stocktake for the parent and all it&apos;s children" time="0.1220" classname="should schedule an active stocktake for the parent and all it&apos;s children">
+    </testcase>
+    <testcase name="StockTakeController should start an active stocktake for the primary station" time="0.5520" classname="should start an active stocktake for the primary station">
+    </testcase>
+    <testcase name="StockTakeController should take stock for the created dataset" time="2.7770" classname="should take stock for the created dataset">
+    </testcase>
+    <testcase name="StockTakeController should end the stocktake" time="0.4930" classname="should end the stocktake">
+    </testcase>
+  </testsuite>
+  <testsuite name="UserController" timestamp="2022-08-31T12:04:47" tests="0" file="/Users/kamal/web/similie/one/test/integration/controllers/UserController.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#searchUsersByUsername" timestamp="2022-08-31T12:04:48" tests="1" file="/Users/kamal/web/similie/one/test/integration/controllers/UserController.test.js" time="0.5280" failures="0">
+    <testcase name="UserController #searchUsersByUsername should should NOT find the user based on the search text because we flipped the active param" time="0.3230" classname="should should NOT find the user based on the search text because we flipped the active param">
+    </testcase>
+  </testsuite>
+  <testsuite name="PointOfSale" timestamp="2022-08-31T12:04:49" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/PointOfSale.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#findAsyn()" timestamp="2022-08-31T12:04:49" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/PointOfSale.test.js" time="0.0010" failures="0">
+    <testcase name="PointOfSale #findAsyn() should have some length" time="0.0000" classname="should have some length">
+    </testcase>
+  </testsuite>
+  <testsuite name="PurchaseOrder" timestamp="2022-08-31T12:04:49" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/PurchaseOrder.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#purchaseOrderLifeCycle()" timestamp="2022-08-31T12:04:50" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/PurchaseOrder.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#PurchaseOrderCreation" timestamp="2022-08-31T12:04:50" tests="9" file="/Users/kamal/web/similie/one/test/integration/models/PurchaseOrder.test.js" time="3.2180" failures="0">
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderCreation should validate the node serial to be attached to the inventory" time="0.0260" classname="should validate the node serial to be attached to the inventory">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderCreation create a new Purchase Order" time="0.4580" classname="create a new Purchase Order">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderCreation approve Purchase Order" time="0.6350" classname="approve Purchase Order">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderCreation approve Purchase SHOULD REJECT AN ALREADY APPROVED STATE" time="0.0850" classname="approve Purchase SHOULD REJECT AN ALREADY APPROVED STATE">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderCreation Apply packing and change state to shipped" time="0.1530" classname="Apply packing and change state to shipped">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderCreation Apply receipt and change state to recieved" time="0.0690" classname="Apply receipt and change state to recieved">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderCreation approve Purchase Order" time="1.6980" classname="approve Purchase Order">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderCreation should have moved the inventory correctly" time="0.0180" classname="should have moved the inventory correctly">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderCreation should have correctly altered the node serial" time="0.0720" classname="should have correctly altered the node serial">
+    </testcase>
+  </testsuite>
+  <testsuite name="#PurchaseOrderUtility" timestamp="2022-08-31T12:04:53" tests="5" file="/Users/kamal/web/similie/one/test/integration/models/PurchaseOrder.test.js" time="0.5770" failures="0">
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderUtility should properly build out a receipt object" time="0.0000" classname="should properly build out a receipt object">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderUtility should have no variant items" time="0.0000" classname="should have no variant items">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderUtility should have 1 variant item" time="0.4480" classname="should have 1 variant item">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderUtility should create a variant details" time="0.0920" classname="should create a variant details">
+    </testcase>
+    <testcase name="PurchaseOrder #purchaseOrderLifeCycle() #PurchaseOrderUtility should find a variant item object" time="0.0350" classname="should find a variant item object">
+    </testcase>
+  </testsuite>
+  <testsuite name="Requisition" timestamp="2022-08-31T12:04:54" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/Requisition.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="BuildingRequisitionMaps" timestamp="2022-08-31T12:04:55" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/Requisition.test.js" time="1.3360" failures="0">
+    <testcase name="Requisition BuildingRequisitionMaps should create a simple req with a category rule" time="1.3330" classname="should create a simple req with a category rule">
+    </testcase>
+  </testsuite>
+  <testsuite name="StationTelemetryModel" timestamp="2022-08-31T12:04:57" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/StationTelemetry.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="StationTelemetry create" timestamp="2022-08-31T12:04:57" tests="5" file="/Users/kamal/web/similie/one/test/integration/models/StationTelemetry.test.js" time="1.6770" failures="0">
+    <testcase name="StationTelemetryModel StationTelemetry create should create a new session" time="0.6460" classname="should create a new session">
+    </testcase>
+    <testcase name="StationTelemetryModel StationTelemetry create should extend the last session" time="0.1950" classname="should extend the last session">
+    </testcase>
+    <testcase name="StationTelemetryModel StationTelemetry create should end the last session" time="0.1860" classname="should end the last session">
+    </testcase>
+    <testcase name="StationTelemetryModel StationTelemetry create should start a new session" time="0.3500" classname="should start a new session">
+    </testcase>
+    <testcase name="StationTelemetryModel StationTelemetry create should start an independent session" time="0.2720" classname="should start an independent session">
+    </testcase>
+  </testsuite>
+  <testsuite name="StockTakeModel" timestamp="2022-08-31T12:04:58" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/StockTake.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Stocktake create" timestamp="2022-08-31T12:04:58" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/StockTake.test.js" time="0.6890" failures="0">
+    <testcase name="StockTakeModel Stocktake create should create a stocktake for both the parents and the childred" time="0.6890" classname="should create a stocktake for both the parents and the childred">
+    </testcase>
+  </testsuite>
+  <testsuite name="Stocktake Scheduler" timestamp="2022-08-31T12:04:59" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/StockTake.test.js" time="0.2110" failures="0">
+    <testcase name="StockTakeModel Stocktake Scheduler should schedule an active stocktake for the parent and all it&apos;s children" time="0.1330" classname="should schedule an active stocktake for the parent and all it&apos;s children">
+    </testcase>
+  </testsuite>
+  <testsuite name="TelemetryAction" timestamp="2022-08-31T12:04:59" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/TelemetryAction.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="It should trigger the event" timestamp="2022-08-31T12:05:00" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/TelemetryAction.test.js" time="8.5420" failures="0">
+    <testcase name="TelemetryAction It should trigger the event should trigger events for deployment" time="0.4150" classname="should trigger events for deployment">
+    </testcase>
+  </testsuite>
+  <testsuite name="WorkOrderModel" timestamp="2022-08-31T12:05:08" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/WorkOrder.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Tree tests" timestamp="2022-08-31T12:05:08" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/WorkOrder.test.js" time="0.5310" failures="0">
+    <testcase name="WorkOrderModel Tree tests should create a valid model with tree properties" time="0.5310" classname="should create a valid model with tree properties">
+    </testcase>
+  </testsuite>
+  <testsuite name="CostCodeModel" timestamp="2022-08-31T12:05:09" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/costcode.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#invoice()" timestamp="2022-08-31T12:05:09" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/costcode.test.js" time="0.4230" failures="0">
+    <testcase name="CostCodeModel #invoice() should create a valid and signed costcode transaction" time="0.4230" classname="should create a valid and signed costcode transaction">
+    </testcase>
+  </testsuite>
+  <testsuite name="#validateBlockChain()" timestamp="2022-08-31T12:05:09" tests="6" file="/Users/kamal/web/similie/one/test/integration/models/costcode.test.js" time="5.4660" failures="0">
+    <testcase name="CostCodeModel #validateBlockChain() should return true that all states are valid" time="0.0090" classname="should return true that all states are valid">
+    </testcase>
+    <testcase name="CostCodeModel #validateBlockChain() should build 10 valid transactions" time="4.6740" classname="should build 10 valid transactions">
+    </testcase>
+    <testcase name="CostCodeModel #validateBlockChain() should return true that all states are valid" time="0.0290" classname="should return true that all states are valid">
+    </testcase>
+    <testcase name="CostCodeModel #validateBlockChain() should return true that all states are valid" time="0.0350" classname="should return true that all states are valid">
+    </testcase>
+    <testcase name="CostCodeModel #validateBlockChain() should return a valid costcode to the domain entity" time="0.6930" classname="should return a valid costcode to the domain entity">
+    </testcase>
+    <testcase name="CostCodeModel #validateBlockChain() should return true that all states are valid" time="0.0070" classname="should return true that all states are valid">
+    </testcase>
+  </testsuite>
+  <testsuite name="DomainModel" timestamp="2022-08-31T12:05:15" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/domain.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#find()" timestamp="2022-08-31T12:05:15" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/domain.test.js" time="0.0300" failures="0">
+    <testcase name="DomainModel #find() should find at least one domain" time="0.0300" classname="should find at least one domain">
+    </testcase>
+  </testsuite>
+  <testsuite name="#findDomainWithURL()" timestamp="2022-08-31T12:05:15" tests="3" file="/Users/kamal/web/similie/one/test/integration/models/domain.test.js" time="0.0160" failures="0">
+    <testcase name="DomainModel #findDomainWithURL() should find one with similie.local.com" time="0.0060" classname="should find one with similie.local.com">
+    </testcase>
+    <testcase name="DomainModel #findDomainWithURL() should find one with similie.local" time="0.0060" classname="should find one with similie.local">
+    </testcase>
+    <testcase name="DomainModel #findDomainWithURL() should not find imnotgreat.com" time="0.0030" classname="should not find imnotgreat.com">
+    </testcase>
+  </testsuite>
+  <testsuite name="#rejectNotUniqueUrl()" timestamp="2022-08-31T12:05:15" tests="2" file="/Users/kamal/web/similie/one/test/integration/models/domain.test.js" time="0.0120" failures="0">
+    <testcase name="DomainModel #rejectNotUniqueUrl() should fail when creating duplicate domain hosts" time="0.0070" classname="should fail when creating duplicate domain hosts">
+    </testcase>
+    <testcase name="DomainModel #rejectNotUniqueUrl() should pass when not creating duplicate domain hosts" time="0.0040" classname="should pass when not creating duplicate domain hosts">
+    </testcase>
+  </testsuite>
+  <testsuite name="#beforeCreate()" timestamp="2022-08-31T12:05:15" tests="2" file="/Users/kamal/web/similie/one/test/integration/models/domain.test.js" time="0.2310" failures="0">
+    <testcase name="DomainModel #beforeCreate() should fail when creating duplicate domain hosts" time="0.0110" classname="should fail when creating duplicate domain hosts">
+    </testcase>
+    <testcase name="DomainModel #beforeCreate() should pass when not creating duplicate domain hosts" time="0.2170" classname="should pass when not creating duplicate domain hosts">
+    </testcase>
+  </testsuite>
+  <testsuite name="populatedCollections" timestamp="2022-08-31T12:05:15" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/domain.test.js" time="0.0380" failures="0">
+    <testcase name="DomainModel populatedCollections the user guernica0131 should have the &quot;domains&quot; collection populated with &quot;Greatest Domain&quot;" time="0.0380" classname="the user guernica0131 should have the &quot;domains&quot; collection populated with &quot;Greatest Domain&quot;">
+    </testcase>
+  </testsuite>
+  <testsuite name="populatedCollections" timestamp="2022-08-31T12:05:15" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/domain.test.js" time="0.3280" failures="0">
+    <testcase name="DomainModel populatedCollections the user guernica0131 should have the &quot;domains&quot; collection populated with &quot;Greatest Domain&quot;" time="0.0340" classname="the user guernica0131 should have the &quot;domains&quot; collection populated with &quot;Greatest Domain&quot;">
+    </testcase>
+  </testsuite>
+  <testsuite name="Early warning model test" timestamp="2022-08-31T12:05:16" tests="12" file="/Users/kamal/web/similie/one/test/integration/models/early-warning.test.js" time="0.6710" failures="0">
+    <testcase name="Early warning model test it should match with the current schema" time="0.0010" classname="it should match with the current schema">
+    </testcase>
+    <testcase name="Early warning model test it should create a new EarlyWarning with correct parameter" time="0.0000" classname="it should create a new EarlyWarning with correct parameter">
+    </testcase>
+    <testcase name="Early warning model test it should return error if create parameter invalid" time="0.0070" classname="it should return error if create parameter invalid">
+    </testcase>
+    <testcase name="Early warning model test it should get all EarlyWarning data" time="0.0260" classname="it should get all EarlyWarning data">
+    </testcase>
+    <testcase name="Early warning model test it should get EarlyWarning data by id" time="0.0290" classname="it should get EarlyWarning data by id">
+    </testcase>
+    <testcase name="Early warning model test it should return undefined if data doen&apos;t exist" time="0.0260" classname="it should return undefined if data doen&apos;t exist">
+    </testcase>
+    <testcase name="Early warning model test it should update EarlyWarning with correct parameter" time="0.0310" classname="it should update EarlyWarning with correct parameter">
+    </testcase>
+    <testcase name="Early warning model test it should return error if update parameter invalid" time="0.0010" classname="it should return error if update parameter invalid">
+    </testcase>
+    <testcase name="Early warning model test it should delete EarlyWarning successfully" time="0.0350" classname="it should delete EarlyWarning successfully">
+    </testcase>
+    <testcase name="Early warning model test it should call cloneForAuto and return correctly" time="0.0010" classname="it should call cloneForAuto and return correctly">
+    </testcase>
+    <testcase name="Early warning model test it should call grind and return correctly" time="0.3360" classname="it should call grind and return correctly">
+    </testcase>
+    <testcase name="Early warning model test it should call process and return correctly" time="0.1400" classname="it should call process and return correctly">
+    </testcase>
+  </testsuite>
+  <testsuite name="EWS model test" timestamp="2022-08-31T12:05:16" tests="10" file="/Users/kamal/web/similie/one/test/integration/models/ews.test.js" time="0.2410" failures="0">
+    <testcase name="EWS model test it should match with the current schema" time="0.0000" classname="it should match with the current schema">
+    </testcase>
+    <testcase name="EWS model test it should return error if create parameter invalid" time="0.0010" classname="it should return error if create parameter invalid">
+    </testcase>
+    <testcase name="EWS model test it should get all EWS data" time="0.0280" classname="it should get all EWS data">
+    </testcase>
+    <testcase name="EWS model test it should get EWS data by id" time="0.0280" classname="it should get EWS data by id">
+    </testcase>
+    <testcase name="EWS model test it should update EWS with correct parameter" time="0.0290" classname="it should update EWS with correct parameter">
+    </testcase>
+    <testcase name="EWS model test it should return error if update parameter invalid" time="0.0000" classname="it should return error if update parameter invalid">
+    </testcase>
+    <testcase name="EWS model test it should delete EWS successfully" time="0.0320" classname="it should delete EWS successfully">
+    </testcase>
+    <testcase name="EWS model test it should call eventProcessor and return empty if last_triggered is invalid" time="0.0020" classname="it should call eventProcessor and return empty if last_triggered is invalid">
+    </testcase>
+    <testcase name="EWS model test it should call ewsActions and return correctly" time="0.0000" classname="it should call ewsActions and return correctly">
+    </testcase>
+    <testcase name="EWS model test it should call setLocals and return correctly" time="0.0290" classname="it should call setLocals and return correctly">
+    </testcase>
+  </testsuite>
+  <testsuite name="MODELSTFUUF" timestamp="2022-08-31T12:05:17" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/models.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#findAsyn()" timestamp="2022-08-31T12:05:17" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/models.test.js" time="0.0000" failures="0">
+    <testcase name="MODELSTFUUF #findAsyn() should have some length" time="0.0000" classname="should have some length">
+    </testcase>
+  </testsuite>
+  <testsuite name="NodeTest" timestamp="2022-08-31T12:05:17" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/node.test.js" time="0.0080" failures="0">
+    <testcase name="NodeTest should parse the formula string with the new values" time="0.0060" classname="should parse the formula string with the new values">
+    </testcase>
+  </testsuite>
+  <testsuite name="NodeSchema" timestamp="2022-08-31T12:05:17" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/nodeschema.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#find()" timestamp="2022-08-31T12:05:17" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/nodeschema.test.js" time="0.0300" failures="0">
+    <testcase name="NodeSchema #find() should have some length" time="0.0290" classname="should have some length">
+    </testcase>
+  </testsuite>
+  <testsuite name="Sms" timestamp="2022-08-31T12:05:17" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/sms.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#find()" timestamp="2022-08-31T12:05:17" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/sms.test.js" time="0.0240" failures="0">
+    <testcase name="Sms #find() should have some length" time="0.0230" classname="should have some length">
+    </testcase>
+  </testsuite>
+  <testsuite name="StationModel" timestamp="2022-08-31T12:05:17" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/station.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#ancestors()" timestamp="2022-08-31T12:05:17" tests="4" file="/Users/kamal/web/similie/one/test/integration/models/station.test.js" time="0.0430" failures="0">
+    <testcase name="StationModel #ancestors() should find size 3 for the ancestors" time="0.0150" classname="should find size 3 for the ancestors">
+    </testcase>
+    <testcase name="StationModel #ancestors() should find size 3 for the ancestors with ID" time="0.0110" classname="should find size 3 for the ancestors with ID">
+    </testcase>
+    <testcase name="StationModel #ancestors() should find size 2 for the ancestors" time="0.0080" classname="should find size 2 for the ancestors">
+    </testcase>
+    <testcase name="StationModel #ancestors() should find size 1 for the ancestors" time="0.0070" classname="should find size 1 for the ancestors">
+    </testcase>
+  </testsuite>
+  <testsuite name="#children()" timestamp="2022-08-31T12:05:17" tests="2" file="/Users/kamal/web/similie/one/test/integration/models/station.test.js" time="0.0220" failures="0">
+    <testcase name="StationModel #children() should find size 3 for the children" time="0.0090" classname="should find size 3 for the children">
+    </testcase>
+    <testcase name="StationModel #children() should find size 2 for the children" time="0.0120" classname="should find size 2 for the children">
+    </testcase>
+  </testsuite>
+  <testsuite name="UserModel" timestamp="2022-08-31T12:05:17" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/user.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#searchingUserByLongName" timestamp="2022-08-31T12:05:17" tests="7" file="/Users/kamal/web/similie/one/test/integration/models/user.test.js" time="0.8500" failures="0">
+    <testcase name="UserModel #searchingUserByLongName It sould Properly format the name search" time="0.0150" classname="It sould Properly format the name search">
+    </testcase>
+    <testcase name="UserModel #searchingUserByLongName should find the gazoomo users" time="0.0200" classname="should find the gazoomo users">
+    </testcase>
+    <testcase name="UserModel #searchingUserByLongName should add a schema search to the where string" time="0.0430" classname="should add a schema search to the where string">
+    </testcase>
+    <testcase name="UserModel #searchingUserByLongName should add sorting to the query" time="0.0180" classname="should add sorting to the query">
+    </testcase>
+    <testcase name="UserModel #searchingUserByLongName should add a limit to  where string" time="0.0090" classname="should add a limit to  where string">
+    </testcase>
+    <testcase name="UserModel #searchingUserByLongName properly wrap the query to select for only ids" time="0.0140" classname="properly wrap the query to select for only ids">
+    </testcase>
+    <testcase name="UserModel #searchingUserByLongName properly wrap the query to select for only ids" time="0.0570" classname="properly wrap the query to select for only ids">
+    </testcase>
+  </testsuite>
+  <testsuite name="#creatingUserInDomain" timestamp="2022-08-31T12:05:18" tests="1" file="/Users/kamal/web/similie/one/test/integration/models/user.test.js" time="0.3440" failures="0">
+    <testcase name="UserModel #creatingUserInDomain should find user scum in the domain with url similie.local" time="0.3440" classname="should find user scum in the domain with url similie.local">
+    </testcase>
+  </testsuite>
+  <testsuite name="#findOneByUsername()" timestamp="2022-08-31T12:05:18" tests="2" file="/Users/kamal/web/similie/one/test/integration/models/user.test.js" time="0.0840" failures="0">
+    <testcase name="UserModel #findOneByUsername() should find user guernica0131" time="0.0400" classname="should find user guernica0131">
+    </testcase>
+    <testcase name="UserModel #findOneByUsername() should find user peon" time="0.0420" classname="should find user peon">
+    </testcase>
+  </testsuite>
+  <testsuite name="#addDomainMembership()" timestamp="2022-08-31T12:05:18" tests="5" file="/Users/kamal/web/similie/one/test/integration/models/user.test.js" time="0.1760" failures="0">
+    <testcase name="UserModel #addDomainMembership() should it should add user &quot;peon&quot; to domain with url similie.local.com" time="0.1730" classname="should it should add user &quot;peon&quot; to domain with url similie.local.com">
+    </testcase>
+    <testcase name="UserModel #addDomainMembership() should have an id" time="0.0000" classname="should have an id">
+    </testcase>
+    <testcase name="UserModel #addDomainMembership() should have a domain object that equals the populated domain" time="0.0010" classname="should have a domain object that equals the populated domain">
+    </testcase>
+    <testcase name="UserModel #addDomainMembership() should have a user object that equals the assigned user" time="0.0000" classname="should have a user object that equals the assigned user">
+    </testcase>
+    <testcase name="UserModel #addDomainMembership() should have role attribute that is a number and is a RECORDER" time="0.0000" classname="should have role attribute that is a number and is a RECORDER">
+    </testcase>
+  </testsuite>
+  <testsuite name="#isDomainMember()" timestamp="2022-08-31T12:05:18" tests="3" file="/Users/kamal/web/similie/one/test/integration/models/user.test.js" time="0.1300" failures="0">
+    <testcase name="UserModel #isDomainMember() should it should pull a RECORDER role from the NULL domain" time="0.0290" classname="should it should pull a RECORDER role from the NULL domain">
+    </testcase>
+    <testcase name="UserModel #isDomainMember() should it should pull a RECORDER role from the domain with similie.local.com" time="0.0510" classname="should it should pull a RECORDER role from the domain with similie.local.com">
+    </testcase>
+    <testcase name="UserModel #isDomainMember() should it should pull a ANONYMOUS role from the domain with similie.local" time="0.0500" classname="should it should pull a ANONYMOUS role from the domain with similie.local">
+    </testcase>
+  </testsuite>
+  <testsuite name="#RolePlay User.is()" timestamp="2022-08-31T12:05:18" tests="5" file="/Users/kamal/web/similie/one/test/integration/models/user.test.js" time="0.4110" failures="0">
+    <testcase name="UserModel #RolePlay User.is() It should show guernica0131 as a SIMILIE_ADMIN" time="0.0000" classname="It should show guernica0131 as a SIMILIE_ADMIN">
+    </testcase>
+    <testcase name="UserModel #RolePlay User.is() should switch peon user to new domain" time="0.2060" classname="should switch peon user to new domain">
+    </testcase>
+    <testcase name="UserModel #RolePlay User.is() It should show peon as a RECORDER" time="0.0000" classname="It should show peon as a RECORDER">
+    </testcase>
+    <testcase name="UserModel #RolePlay User.is() should switch scum user to new domain" time="0.2030" classname="should switch scum user to new domain">
+    </testcase>
+    <testcase name="UserModel #RolePlay User.is() It should show scum as a MANAGER" time="0.0010" classname="It should show scum as a MANAGER">
+    </testcase>
+  </testsuite>
+  <testsuite name="#removeDomainMembership()" timestamp="2022-08-31T12:05:19" tests="18" file="/Users/kamal/web/similie/one/test/integration/models/user.test.js" time="0.8230" failures="0">
+    <testcase name="UserModel #removeDomainMembership() should check if Peon #hasDomainMembership to NULL DOMAIN" time="0.0520" classname="should check if Peon #hasDomainMembership to NULL DOMAIN">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should check if Peon #hasDomainMembership to similie.local.com" time="0.0560" classname="should check if Peon #hasDomainMembership to similie.local.com">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should check if Peon #hasDomainMembership to similie.local" time="0.0480" classname="should check if Peon #hasDomainMembership to similie.local">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should check if Scum #hasDomainMembership to NULL DOMAIN" time="0.0510" classname="should check if Scum #hasDomainMembership to NULL DOMAIN">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should check if Scum #hasDomainMembership to similie.local.com" time="0.0490" classname="should check if Scum #hasDomainMembership to similie.local.com">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should check if Scum #hasDomainMembership to similie.local" time="0.0640" classname="should check if Scum #hasDomainMembership to similie.local">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should check if guernica0131 #hasDomainMembership to NULL DOMAIN" time="0.0340" classname="should check if guernica0131 #hasDomainMembership to NULL DOMAIN">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should check if guernica0131 #hasDomainMembership to similie.local.com" time="0.0380" classname="should check if guernica0131 #hasDomainMembership to similie.local.com">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should check if guernica0131 #hasDomainMembership to similie.local" time="0.0230" classname="should check if guernica0131 #hasDomainMembership to similie.local">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should find all the members in the similie.local.com domain" time="0.0320" classname="should find all the members in the similie.local.com domain">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should find all the members in the similie.local domain" time="0.0240" classname="should find all the members in the similie.local domain">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should throw error when removing a member berry from domain with invalid params" time="0.0020" classname="should throw error when removing a member berry from domain with invalid params">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should remove memberberry Peon from domain with url similie.local.com" time="0.2000" classname="should remove memberberry Peon from domain with url similie.local.com">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should have a reject with an id" time="0.0010" classname="should have a reject with an id">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should have a reject with an empty domains array" time="0.0000" classname="should have a reject with an empty domains array">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should have DomainRole that is empty" time="0.0280" classname="should have DomainRole that is empty">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should check if user does not #hasDomainMembership to similie.local.com" time="0.0510" classname="should check if user does not #hasDomainMembership to similie.local.com">
+    </testcase>
+    <testcase name="UserModel #removeDomainMembership() should check if user still has access to NULL" time="0.0550" classname="should check if user still has access to NULL">
+    </testcase>
+  </testsuite>
+  <testsuite name="#addDomainMembership()" timestamp="2022-08-31T12:05:20" tests="7" file="/Users/kamal/web/similie/one/test/integration/models/user.test.js" time="0.3720" failures="0">
+    <testcase name="UserModel #addDomainMembership() should it should add user &quot;Peon&quot; to domain with url similie.local" time="0.1640" classname="should it should add user &quot;Peon&quot; to domain with url similie.local">
+    </testcase>
+    <testcase name="UserModel #addDomainMembership() should switch peon user to new domain" time="0.2060" classname="should switch peon user to new domain">
+    </testcase>
+    <testcase name="UserModel #addDomainMembership() should have an id" time="0.0000" classname="should have an id">
+    </testcase>
+    <testcase name="UserModel #addDomainMembership() should have a domain object that equals the populated domain" time="0.0000" classname="should have a domain object that equals the populated domain">
+    </testcase>
+    <testcase name="UserModel #addDomainMembership() should have a user object that equals the assigned user" time="0.0000" classname="should have a user object that equals the assigned user">
+    </testcase>
+    <testcase name="UserModel #addDomainMembership() should have role attribute that is a number and is a SITE_ADMIN" time="0.0000" classname="should have role attribute that is a number and is a SITE_ADMIN">
+    </testcase>
+    <testcase name="UserModel #addDomainMembership() It should show peon as a SITE_ADMIN" time="0.0000" classname="It should show peon as a SITE_ADMIN">
+    </testcase>
+  </testsuite>
+  <testsuite name="#changeDomain()" timestamp="2022-08-31T12:05:20" tests="11" file="/Users/kamal/web/similie/one/test/integration/models/user.test.js" time="1.0370" failures="0">
+    <testcase name="UserModel #changeDomain() should change &quot;Peon&quot; to domain NULL pass" time="0.1660" classname="should change &quot;Peon&quot; to domain NULL pass">
+    </testcase>
+    <testcase name="UserModel #changeDomain() should it should pull a RECORDER role from the NULL domain" time="0.0240" classname="should it should pull a RECORDER role from the NULL domain">
+    </testcase>
+    <testcase name="UserModel #changeDomain() should show Peon as a RECORDER" time="0.0000" classname="should show Peon as a RECORDER">
+    </testcase>
+    <testcase name="UserModel #changeDomain() should NOT change &quot;Peon&quot; to domain with url similie.local.com should fail due to no access" time="0.0690" classname="should NOT change &quot;Peon&quot; to domain with url similie.local.com should fail due to no access">
+    </testcase>
+    <testcase name="UserModel #changeDomain() should change &quot;Peon&quot; to back to domain similie.local" time="0.2680" classname="should change &quot;Peon&quot; to back to domain similie.local">
+    </testcase>
+    <testcase name="UserModel #changeDomain() should should pull a SITE_ADMIN role from the similie.local domain" time="0.0640" classname="should should pull a SITE_ADMIN role from the similie.local domain">
+    </testcase>
+    <testcase name="UserModel #changeDomain() should show Peon as a SITE_ADMIN" time="0.0000" classname="should show Peon as a SITE_ADMIN">
+    </testcase>
+    <testcase name="UserModel #changeDomain() should it should add user &quot;peon&quot; to domain with url similie.local.com" time="0.1740" classname="should it should add user &quot;peon&quot; to domain with url similie.local.com">
+    </testcase>
+    <testcase name="UserModel #changeDomain() should change &quot;Peon&quot; to back to domain similie.local.com" time="0.2140" classname="should change &quot;Peon&quot; to back to domain similie.local.com">
+    </testcase>
+    <testcase name="UserModel #changeDomain() should should pull a REPORTER role from the similie.local.com domain" time="0.0530" classname="should should pull a REPORTER role from the similie.local.com domain">
+    </testcase>
+    <testcase name="UserModel #changeDomain() It should show peon as a REPORTER" time="0.0010" classname="It should show peon as a REPORTER">
+    </testcase>
+  </testsuite>
+  <testsuite name="WindyEw" timestamp="2022-08-31T12:05:21" tests="0" file="/Users/kamal/web/similie/one/test/integration/models/windy-ew.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="TestEvents" timestamp="2022-08-31T12:05:21" tests="8" file="/Users/kamal/web/similie/one/test/integration/models/windy-ew.test.js" time="10.0350" failures="0">
+    <testcase name="WindyEw TestEvents should pull points form the api" time="0.0000" classname="should pull points form the api">
+    </testcase>
+    <testcase name="WindyEw TestEvents should pull the span dates into its object" time="0.0010" classname="should pull the span dates into its object">
+    </testcase>
+    <testcase name="WindyEw TestEvents should find ew dangers at the specific threshold" time="0.0000" classname="should find ew dangers at the specific threshold">
+    </testcase>
+    <testcase name="WindyEw TestEvents should buid early warning events on build" time="0.0000" classname="should buid early warning events on build">
+    </testcase>
+    <testcase name="WindyEw TestEvents should expect all triggered events to be waiting " time="0.0000" classname="should expect all triggered events to be waiting ">
+    </testcase>
+    <testcase name="WindyEw TestEvents should expect all triggered events to be blocked " time="0.0000" classname="should expect all triggered events to be blocked ">
+    </testcase>
+    <testcase name="WindyEw TestEvents should verify triggered events are not ready" time="0.0230" classname="should verify triggered events are not ready">
+    </testcase>
+    <testcase name="WindyEw TestEvents should block events again given recent process " time="0.0000" classname="should block events again given recent process ">
+    </testcase>
+  </testsuite>
+  <testsuite name="Refactored SqlUtils Library ORM Helper Class" timestamp="2022-08-31T12:05:31" tests="15" file="/Users/kamal/web/similie/one/test/integration/services/SqlUtil_Refactor.test.js" time="0.0940" failures="0">
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Creates a new instance of the ORM Helper class" time="0.0040" classname="Creates a new instance of the ORM Helper class">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Returns the correct schema name from the specified interface with getDomainSchema" time="0.0040" classname="Returns the correct schema name from the specified interface with getDomainSchema">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Returns the expected schema name based on the fields in the specifed object with getSchemaName" time="0.0040" classname="Returns the expected schema name based on the fields in the specifed object with getSchemaName">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Parses the correct schema.tableName from the specified schema" time="0.0000" classname="Parses the correct schema.tableName from the specified schema">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Returns an actionable knex orm entity bound to the data table specified in the schema " time="0.0020" classname="Returns an actionable knex orm entity bound to the data table specified in the schema ">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Returns true when the table in the specified schema exists in the database" time="0.0010" classname="Returns true when the table in the specified schema exists in the database">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Returns true when the view in the specified schema exists in the database" time="0.0000" classname="Returns true when the view in the specified schema exists in the database">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Returns false when the table in the specified schema does not exist in the database" time="0.0020" classname="Returns false when the table in the specified schema does not exist in the database">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Returns false when the view in the specified schema does not exist in the database" time="0.0010" classname="Returns false when the view in the specified schema does not exist in the database">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Create view (async) creates a view and returns true from await or .then" time="0.0010" classname="Create view (async) creates a view and returns true from await or .then">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class Create view (async) throws an error when the underlying database throws (create failure)" time="0.0000" classname="Create view (async) throws an error when the underlying database throws (create failure)">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class createSchemaFail throws an error when creating a schema that already exists in the database" time="0.0020" classname="createSchemaFail throws an error when creating a schema that already exists in the database">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class createSchemaFail creates a new schema if it doesn&apos;t already exist in the database" time="0.0000" classname="createSchemaFail creates a new schema if it doesn&apos;t already exist in the database">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class createSchema doesn&apos;t throw an error when creating a schema that already exists in the database" time="0.0010" classname="createSchema doesn&apos;t throw an error when creating a schema that already exists in the database">
+    </testcase>
+    <testcase name="Refactored SqlUtils Library ORM Helper Class createSchema creates a new schema if it doesn&apos;t already exist in the database" time="0.0040" classname="createSchema creates a new schema if it doesn&apos;t already exist in the database">
+    </testcase>
+  </testsuite>
+  <testsuite name="CommonUtils vs. Utils A|B tests" timestamp="2022-08-31T12:05:31" tests="40" file="/Users/kamal/web/similie/one/test/integration/services/Utils_Refactor.test.js" time="0.0700" failures="0">
+    <testcase name="CommonUtils vs. Utils A|B tests ParseLocals correctly parses the specified string with values from the replacement object" time="0.0010" classname="ParseLocals correctly parses the specified string with values from the replacement object">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests ParseLocals ignores key-like strings not escaped with wrapping &apos;%&apos; characters" time="0.0010" classname="ParseLocals ignores key-like strings not escaped with wrapping &apos;%&apos; characters">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests ParseLocals correctly adds line breaks while parsing values from the replacement object" time="0.0010" classname="ParseLocals correctly adds line breaks while parsing values from the replacement object">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests ParseLocals correctly adds NULL while parsing values from the replacement object" time="0.0000" classname="ParseLocals correctly adds NULL while parsing values from the replacement object">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests ParseLocals correctly adds UNKNOWN while parsing values from the replacement object" time="0.0000" classname="ParseLocals correctly adds UNKNOWN while parsing values from the replacement object">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests ParseLocals doesn&apos;t replace a % escaped key where no replacement exists in the replacement object" time="0.0000" classname="ParseLocals doesn&apos;t replace a % escaped key where no replacement exists in the replacement object">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests ParseLocals correctly iterates multi-part keys while parsing values from the replacement object" time="0.0070" classname="ParseLocals correctly iterates multi-part keys while parsing values from the replacement object">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests getErrorCode returns the correct object values for the specified enum value" time="0.0030" classname="getErrorCode returns the correct object values for the specified enum value">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests guardItsRequired (replacement for itsRequired) throws when the input is falsy" time="0.0050" classname="guardItsRequired (replacement for itsRequired) throws when the input is falsy">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests guardItsRequired (replacement for itsRequired) returns true when the input is truthy" time="0.0000" classname="guardItsRequired (replacement for itsRequired) returns true when the input is truthy">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests TruncateText... produces nearly the same result. Note Utils has a bug" time="0.0000" classname="TruncateText... produces nearly the same result. Note Utils has a bug">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests TruncateText returns a copy of the input string when the string is shorter than the specified length" time="0.0010" classname="TruncateText returns a copy of the input string when the string is shorter than the specified length">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests transformAttributes transforms the expected parameters" time="0.0030" classname="transformAttributes transforms the expected parameters">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests populateNotNullRecods (sic) returns the correct objects for the specified keys" time="0.0020" classname="populateNotNullRecods (sic) returns the correct objects for the specified keys">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests populateNotNullRecods (sic) returns an empty array when there are no matching input values" time="0.0000" classname="populateNotNullRecods (sic) returns an empty array when there are no matching input values">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests stripUndefinedIds returns an empty array when the input value is not an array with at least one element" time="0.0020" classname="stripUndefinedIds returns an empty array when the input value is not an array with at least one element">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests stripUndefinedIds accepts an array of values and returns an array of integers" time="0.0000" classname="stripUndefinedIds accepts an array of values and returns an array of integers">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests hasKeysShallow returns true for an input object that contains the specified key" time="0.0000" classname="hasKeysShallow returns true for an input object that contains the specified key">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests hasKeysShallow returns true for an input object that contains the specified keys" time="0.0000" classname="hasKeysShallow returns true for an input object that contains the specified keys">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests hasKeysShallow returns false for an input object that doesn&apos;t contain the specified key" time="0.0000" classname="hasKeysShallow returns false for an input object that doesn&apos;t contain the specified key">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests containsValue returns true if the input object has the specified value in one of its keys" time="0.0010" classname="containsValue returns true if the input object has the specified value in one of its keys">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests containsValue returns true if the input object has the specified value in one of its keys" time="0.0000" classname="containsValue returns true if the input object has the specified value in one of its keys">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests containsValue returns false if the input object doesn&apos;t have the specified value in one of its keys" time="0.0010" classname="containsValue returns false if the input object doesn&apos;t have the specified value in one of its keys">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests deepValues should show all the values of id fields in the specified input array" time="0.0020" classname="deepValues should show all the values of id fields in the specified input array">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests deepValues should show all the values of id fields in the specified input object" time="0.0010" classname="deepValues should show all the values of id fields in the specified input object">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests deepValues should return the value of the specified nested key in the input object" time="0.0000" classname="deepValues should return the value of the specified nested key in the input object">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests deepValues should return an empty array for non-existent keys on the input object" time="0.0020" classname="deepValues should return an empty array for non-existent keys on the input object">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests deepValues should return an array showing that the domains model has models tag, site &amp; statekeys" time="0.0010" classname="deepValues should return an array showing that the domains model has models tag, site &amp; statekeys">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests deepValues should return an array showing that the variable model has models domain" time="0.0010" classname="deepValues should return an array showing that the variable model has models domain">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests deepKeys returns an array of values from the nested input object that match the specfied keys" time="0.0000" classname="deepKeys returns an array of values from the nested input object that match the specfied keys">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests deepKeys returns an empty array when the nested input object has no matching keys" time="0.0010" classname="deepKeys returns an empty array when the nested input object has no matching keys">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests fixDecimalPlaces adds the correct number of dp to a float input" time="0.0020" classname="fixDecimalPlaces adds the correct number of dp to a float input">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests fixDecimalPlaces adds the correct number of dp to a string input" time="0.0000" classname="fixDecimalPlaces adds the correct number of dp to a string input">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests fixDecimalPlaces ignores the number of dp for an integer input" time="0.0000" classname="fixDecimalPlaces ignores the number of dp for an integer input">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests fixDecimalPlaces returns an int value when round is true" time="0.0000" classname="fixDecimalPlaces returns an int value when round is true">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests fixDecimalPlaces defaults to 2dp non-rounded values when the round and length parameters are omitted" time="0.0000" classname="fixDecimalPlaces defaults to 2dp non-rounded values when the round and length parameters are omitted">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests asMoney correctly formats a value into USD using the default options" time="0.0070" classname="asMoney correctly formats a value into USD using the default options">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests CommonUtils.asMoney correctly formats a value into the correct currency and locale, Utils.asMoney always uses USD" time="0.0040" classname="CommonUtils.asMoney correctly formats a value into the correct currency and locale, Utils.asMoney always uses USD">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests PullHost correctly returns the path for all options of config.secure_protocol" time="0.0030" classname="PullHost correctly returns the path for all options of config.secure_protocol">
+    </testcase>
+    <testcase name="CommonUtils vs. Utils A|B tests PullHost correctly returns the override URL when present in process.env" time="0.0010" classname="PullHost correctly returns the override URL when present in process.env">
+    </testcase>
+  </testsuite>
+  <testsuite name="CommonUtils.security vs. Utils A|B tests" timestamp="2022-08-31T12:05:31" tests="1" file="/Users/kamal/web/similie/one/test/integration/services/Utils_Refactor.test.js" time="0.0090" failures="0">
+    <testcase name="CommonUtils.security vs. Utils A|B tests Creates a valid V4 UUID" time="0.0070" classname="Creates a valid V4 UUID">
+    </testcase>
+  </testsuite>
+  <testsuite name="CommonUtils.params vs. Utils A|B tests" timestamp="2022-08-31T12:05:31" tests="18" file="/Users/kamal/web/similie/one/test/integration/services/Utils_Refactor.test.js" time="0.0290" failures="0">
+    <testcase name="CommonUtils.params vs. Utils A|B tests deleteFieldsFromRequest - case 1. Deletes the specfied fields from req.body.where" time="0.0060" classname="deleteFieldsFromRequest - case 1. Deletes the specfied fields from req.body.where">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests deleteFieldsFromRequest - case 2. Deletes the specfied fields from req.body.query.where" time="0.0000" classname="deleteFieldsFromRequest - case 2. Deletes the specfied fields from req.body.query.where">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests deleteFieldsFromRequest - case 3. Deletes the specfied fields from req.query.where" time="0.0000" classname="deleteFieldsFromRequest - case 3. Deletes the specfied fields from req.query.where">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests deleteFieldsFromRequest - case 4. Deletes every instance of the matched parameters from req" time="0.0020" classname="deleteFieldsFromRequest - case 4. Deletes every instance of the matched parameters from req">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests addToRequest - case 1. req.body.where.key is modified with the supplied values" time="0.0040" classname="addToRequest - case 1. req.body.where.key is modified with the supplied values">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests addToRequest - case 2. req.body.query.where.key is modified with the supplied values" time="0.0000" classname="addToRequest - case 2. req.body.query.where.key is modified with the supplied values">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests addToRequest - case 3. req.query.where.key is modified with the supplied values" time="0.0000" classname="addToRequest - case 3. req.query.where.key is modified with the supplied values">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests pullArray throws when a null/undefined input parameter is specified" time="0.0000" classname="pullArray throws when a null/undefined input parameter is specified">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests pullArray returns the original input if it is an array" time="0.0010" classname="pullArray returns the original input if it is an array">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests pullArray converts an integer indexed object type into an array of values" time="0.0000" classname="pullArray converts an integer indexed object type into an array of values">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests forceRequestParameters applies every change in the input spread to the supplied req object" time="0.0020" classname="forceRequestParameters applies every change in the input spread to the supplied req object">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests deleteFieldFromRequest returns an exact copy of the input object if it doesn&apos;t contain either body or query params" time="0.0000" classname="deleteFieldFromRequest returns an exact copy of the input object if it doesn&apos;t contain either body or query params">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests deleteFieldFromRequest returns an exact copy of the input object if it doesn&apos;t contain the specified key parameter" time="0.0010" classname="deleteFieldFromRequest returns an exact copy of the input object if it doesn&apos;t contain the specified key parameter">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests deleteFieldFromRequest correctly removes the specified key param from the query object" time="0.0010" classname="deleteFieldFromRequest correctly removes the specified key param from the query object">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests deleteFieldFromRequest correctly removes the specified key param from the body object" time="0.0000" classname="deleteFieldFromRequest correctly removes the specified key param from the body object">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests parseObjectValue identifies and parses and replaces a JSON string on a parameter field" time="0.0010" classname="parseObjectValue identifies and parses and replaces a JSON string on a parameter field">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests parseObjectValue identifies an object on a parameter field and returns it unchanged" time="0.0000" classname="parseObjectValue identifies an object on a parameter field and returns it unchanged">
+    </testcase>
+    <testcase name="CommonUtils.params vs. Utils A|B tests parseObjectValue throws if the specifed string parameter is not a parsable JSON string" time="0.0000" classname="parseObjectValue throws if the specifed string parameter is not a parsable JSON string">
+    </testcase>
+  </testsuite>
+  <testsuite name="EWS action utils" timestamp="2022-08-31T12:05:32" tests="10" file="/Users/kamal/web/similie/one/test/integration/services/ews-action-utils.test.js" time="0.7690" failures="0">
+    <testcase name="EWS action utils it should run stringifyPoint and return correctly" time="0.0000" classname="it should run stringifyPoint and return correctly">
+    </testcase>
+    <testcase name="EWS action utils it should run getStationName and return correctly" time="0.1090" classname="it should run getStationName and return correctly">
+    </testcase>
+    <testcase name="EWS action utils it should run applyTriggerValuesToLocals and return correctly" time="0.0000" classname="it should run applyTriggerValuesToLocals and return correctly">
+    </testcase>
+    <testcase name="EWS action utils it should run getRelevantValues and return correctly" time="0.0030" classname="it should run getRelevantValues and return correctly">
+    </testcase>
+    <testcase name="EWS action utils it should run pullSpecialValues and return correctly" time="0.0890" classname="it should run pullSpecialValues and return correctly">
+    </testcase>
+    <testcase name="EWS action utils it should run pullSchemaValues and return correctly" time="0.0440" classname="it should run pullSchemaValues and return correctly">
+    </testcase>
+    <testcase name="EWS action utils it should run isActionableStation and return correctly" time="0.0730" classname="it should run isActionableStation and return correctly">
+    </testcase>
+    <testcase name="EWS action utils it should run fetchStationFromEarlyWarningCategoryModel and return correctly" time="0.0710" classname="it should run fetchStationFromEarlyWarningCategoryModel and return correctly">
+    </testcase>
+    <testcase name="EWS action utils it should run findOrCreateEWSModel and return correctly" time="0.0990" classname="it should run findOrCreateEWSModel and return correctly">
+    </testcase>
+    <testcase name="EWS action utils it should run findExistingEWSModel and return correctly" time="0.0290" classname="it should run findExistingEWSModel and return correctly">
+    </testcase>
+  </testsuite>
+  <testsuite name="Utils" timestamp="2022-08-31T12:05:32" tests="0" file="/Users/kamal/web/similie/one/test/integration/services/utils.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="#findDelta" timestamp="2022-08-31T12:05:32" tests="1" file="/Users/kamal/web/similie/one/test/integration/services/utils.test.js" time="0.0110" failures="0">
+    <testcase name="Utils #findDelta should show true with the domain key" time="0.0110" classname="should show true with the domain key">
+    </testcase>
+  </testsuite>
+  <testsuite name="#hasKeysShallow" timestamp="2022-08-31T12:05:32" tests="3" file="/Users/kamal/web/similie/one/test/integration/services/utils.test.js" time="0.0010" failures="0">
+    <testcase name="Utils #hasKeysShallow should show true with the domain key" time="0.0000" classname="should show true with the domain key">
+    </testcase>
+    <testcase name="Utils #hasKeysShallow should show true with the id keys and domain and id" time="0.0000" classname="should show true with the id keys and domain and id">
+    </testcase>
+    <testcase name="Utils #hasKeysShallow should show false frogs" time="0.0000" classname="should show false frogs">
+    </testcase>
+  </testsuite>
+  <testsuite name="#deepKeys" timestamp="2022-08-31T12:05:32" tests="4" file="/Users/kamal/web/similie/one/test/integration/services/utils.test.js" time="0.0010" failures="0">
+    <testcase name="Utils #deepKeys should show true with the id keys" time="0.0000" classname="should show true with the id keys">
+    </testcase>
+    <testcase name="Utils #deepKeys should show true with the id keys and elements" time="0.0010" classname="should show true with the id keys and elements">
+    </testcase>
+    <testcase name="Utils #deepKeys should show false id and frogs" time="0.0000" classname="should show false id and frogs">
+    </testcase>
+    <testcase name="Utils #deepKeys should show true with the id keys and beachball" time="0.0000" classname="should show true with the id keys and beachball">
+    </testcase>
+  </testsuite>
+  <testsuite name="#deepValues" timestamp="2022-08-31T12:05:32" tests="7" file="/Users/kamal/web/similie/one/test/integration/services/utils.test.js" time="0.0060" failures="0">
+    <testcase name="Utils #deepValues should show all the values of id" time="0.0010" classname="should show all the values of id">
+    </testcase>
+    <testcase name="Utils #deepValues should show all the values of toads" time="0.0000" classname="should show all the values of toads">
+    </testcase>
+    <testcase name="Utils #deepValues should show all the values of toads" time="0.0010" classname="should show all the values of toads">
+    </testcase>
+    <testcase name="Utils #deepValues should show empty value of birds" time="0.0000" classname="should show empty value of birds">
+    </testcase>
+    <testcase name="Utils #deepValues should show the domains model has models tag and site" time="0.0000" classname="should show the domains model has models tag and site">
+    </testcase>
+    <testcase name="Utils #deepValues should show the variable model has models domain" time="0.0010" classname="should show the variable model has models domain">
+    </testcase>
+    <testcase name="Utils #deepValues should show the variable model has models has a model key with the value of domain" time="0.0000" classname="should show the variable model has models has a model key with the value of domain">
+    </testcase>
+  </testsuite>
+  <testsuite name="#fixValue(value, round, length)" timestamp="2022-08-31T12:05:32" tests="1" file="/Users/kamal/web/similie/one/test/integration/services/utils.test.js" time="0.0010" failures="0">
+    <testcase name="Utils #fixValue(value, round, length) should return an numeric value" time="0.0010" classname="should return an numeric value">
+    </testcase>
+  </testsuite>
+  <testsuite name="VirtualFunction" timestamp="2022-08-31T12:05:32" tests="0" file="/Users/kamal/web/similie/one/test/integration/services/virtualfunctions.test.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="sqsNodes" timestamp="2022-08-31T12:05:32" tests="1" file="/Users/kamal/web/similie/one/test/integration/services/virtualfunctions.test.js" time="0.8840" failures="0">
+    <testcase name="VirtualFunction sqsNodes change_velocity: it should give us the change velocity" time="0.2090" classname="change_velocity: it should give us the change velocity">
+    </testcase>
+  </testsuite>
+  <testsuite name="What3words" timestamp="2022-08-31T12:05:33" tests="2" file="/Users/kamal/web/similie/one/test/integration/services/what3words.test.js" time="1.3830" failures="0">
+    <testcase name="What3words it should reverse the lat/lng as json with a words string" time="0.8900" classname="it should reverse the lat/lng as json with a words string">
+    </testcase>
+    <testcase name="What3words it should reverse the lat/lng as json with a words string" time="0.3230" classname="it should reverse the lat/lng as json with a words string">
+    </testcase>
+  </testsuite>
+</testsuites>
