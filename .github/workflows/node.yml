@@ -16,6 +16,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         node-version: [16.x]
+        redis-version: [4]
 
     steps:
       - name: Checkout
@@ -31,7 +32,7 @@ jobs:
         with:
           redis-version: ${{ matrix.redis-version }}
 
-      - name: Setup Postgres database
+      - name: Start Postgres
         uses: Daniel-Marynicz/postgresql-action@master
         with:
           postgres_image_tag: 12-alpine
