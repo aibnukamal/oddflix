@@ -36,8 +36,8 @@ jobs:
         uses: Daniel-Marynicz/postgresql-action@master
         with:
           postgres_image_tag: 12-alpine
-          app_user: postgres
-          app_user_password: postgres
+          app_user: test
+          app_user_password: test
           app_db: test_db
           postgres_extensions: uuid-ossp ltree    
     
