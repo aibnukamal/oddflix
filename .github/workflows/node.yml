@@ -39,7 +39,7 @@ jobs:
           app_user: test
           app_user_password: test
           app_db: test_db
-          postgres_extensions: uuid-ossp ltree    
+#          postgres_extensions: uuid-ossp ltree    
     
       - name: Run test
         run: |
