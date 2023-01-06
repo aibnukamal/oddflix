@@ -1,0 +1,37 @@
+name: Run Unit Test
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ${{matrix.os}}
+
+    strategy:
+      max-parallel: 24
+      matrix:
+        os: [ubuntu-latest]
+        node-version: [16.x]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Run test
+        run: |
+          cd movie-gql
+          yarn
+          yarn test --coverage
+      - name: Check test coverage
+        uses: terencetcf/github-actions-lcov-minimum-coverage-checker@v1
+        with:
+          coverage-file: movie-gql/coverage/lcov.info
+          minimum-coverage: 50
